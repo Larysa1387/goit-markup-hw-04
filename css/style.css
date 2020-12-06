@@ -313,10 +313,13 @@ background-image: url('../images/clock-1.svg');
 
 .container.align {
   display: flex;
-
+  align-items: baseline;
 }
 
-
+.align .contacts {
+  width: 231px;
+  margin-right: 70px;
+}
 
 .footer .logo {
   color: var(--primary-white-color);
@@ -339,6 +342,9 @@ background-image: url('../images/clock-1.svg');
   color: rgba(255, 255, 255, 0.6);
 }
 
+.sign {
+  align-items: start;
+}
 .sign-in {
   display: block;
   font-style: normal;
@@ -347,6 +353,8 @@ background-image: url('../images/clock-1.svg');
   font-size: 14px;
   line-height: 1.14px;
   margin-bottom: 20px;
+  padding: 0;
+  margin-top: 0;
 }
 
 .nets.list {
@@ -357,7 +365,6 @@ background-image: url('../images/clock-1.svg');
 .nets.list .social-nets:not(:last-child) {
   margin-right: 10px;
 }
-
 
 .social-nets::after {
   display: inline-flex;
@@ -373,21 +380,23 @@ background-image: url('../images/clock-1.svg');
 
 .social-nets.instagram::after {
   background-image: url('../images/instagram-2.svg');
-   /* background-color: rgba(255, 255, 255, 0.1); */
- }
+}
 
 .social-nets.twitter::after {
   background-image: url('../images/twitter-2.svg');
-  /* background-color: rgba(255, 255, 255, 0.1); */
 }
 
 .social-nets.facebook::after {
   background-image: url('../images/facebook-2.svg');
-  /* background-color: rgba(255, 255, 255, 0.1); */
 }
 
 .social-nets.linkedin::after {
   background-image: url('../images/linkedin-2.svg');
+}
+
+.social-nets:hover::after {
+  cursor: pointer;
+  background-color: var(--accent-color);
 }
 
 
@@ -440,9 +449,7 @@ button:focus{
 .products.list {
   display: flex;
   flex-wrap: wrap;
-
   margin: -15px;
-
 }
 
 .products .item {
@@ -452,7 +459,6 @@ button:focus{
 .products .product-title {
   margin-top: 0;
   margin-bottom: 0;
-
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
