@@ -60,14 +60,12 @@ a {
 
 .logo {
   margin-right: 93px;
-
   font-family: Raleway;
   font-weight:700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--title-text-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+
 }
 
 .accent {
@@ -77,6 +75,8 @@ a {
 .main-nav {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .nav.list {
@@ -211,8 +211,19 @@ h2, h3 {
 }
 
 .item.icon-antenna::before {
-  background-image: url('../images/antenna-1.png');
+  background-image: url('../images/antenna1.svg');
+}
 
+.item.icon-clock::before {
+background-image: url('../images/clock-1.svg');
+}
+
+.item.icon-diagram::before {
+  background-image: url('../images/diagram1.svg');
+}
+
+.item.icon-astronaut::before {
+  background-image: url('../images/astronaut1.svg');
 }
 
 .features-title {
@@ -296,10 +307,16 @@ h2, h3 {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
   color: var(--primary-white-color);
   background-color: var(--accent-background);
 }
+
+.container.align {
+  display: flex;
+
+}
+
+
 
 .footer .logo {
   color: var(--primary-white-color);
@@ -322,7 +339,59 @@ h2, h3 {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* portfolio style */
+.sign-in {
+  display: block;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14px;
+  margin-bottom: 20px;
+}
+
+.nets.list {
+  display: flex;
+
+}
+
+.nets.list .social-nets:not(:last-child) {
+  margin-right: 10px;
+}
+
+
+.social-nets::after {
+  display: inline-flex;
+  content: "";
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.social-nets.instagram::after {
+  background-image: url('../images/instagram-2.svg');
+   /* background-color: rgba(255, 255, 255, 0.1); */
+ }
+
+.social-nets.twitter::after {
+  background-image: url('../images/twitter-2.svg');
+  /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
+.social-nets.facebook::after {
+  background-image: url('../images/facebook-2.svg');
+  /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
+.social-nets.linkedin::after {
+  background-image: url('../images/linkedin-2.svg');
+}
+
+
+  /* portfolio style */
 
 .visually-hidden {
   position: absolute;
