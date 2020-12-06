@@ -255,7 +255,8 @@ background-image: url('../images/clock1.svg');
 
 
 .about-us.title,
-.team-title {
+.team-title,
+.clients-title {
   margin-top: 0;
   margin-bottom: 50px;
 
