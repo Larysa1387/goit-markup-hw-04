@@ -215,7 +215,7 @@ h2, h3 {
 }
 
 .item.icon-clock::before {
-background-image: url('../images/clock-1.svg');
+background-image: url('../images/clock1.svg');
 }
 
 .item.icon-diagram::before {
