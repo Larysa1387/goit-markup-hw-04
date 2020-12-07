@@ -98,8 +98,6 @@ a {
 }
 
 .nav .link {
-  display: flex;
-  align-items: baseline;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -354,22 +352,20 @@ background-image: url('../images/clock1.svg');
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 170px;
+  width: 170px;
   height: 90px;
+  color: var(--icon-color);
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
 
 .client.link:hover {
   border: 1px solid var(--accent-color);
+  color: var(--accent-color);
 }
 
 .client-icon {
-  fill: var(--icon-color);
-}
-
-.client-icon:hover {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 /* footer style */
@@ -416,10 +412,9 @@ background-image: url('../images/clock1.svg');
   align-items: start;
 }
 .sign-in {
-  display: block;
+  display: inline-block;
   font-style: normal;
   text-transform: uppercase;
-  font-weight: bold;
   font-size: 14px;
   line-height: 1.14px;
   margin-bottom: 20px;
