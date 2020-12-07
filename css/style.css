@@ -16,6 +16,7 @@ html {
   --primary-white-color: #FFFFFF;
   --primary-background: #F5F4FA;
   --accent-background: #2F303A;
+  --icon-color: #AFB1B8;
 }
 
 body {
@@ -292,7 +293,7 @@ background-image: url('../images/clock1.svg');
 
 .team-position {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
 .team .item {
@@ -301,6 +302,31 @@ background-image: url('../images/clock1.svg');
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
    0px 1px 1px rgba(0, 0, 0, 0.14),
    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.soc-link {
+  display: flex;
+  justify-content: center;
+}
+
+.soc-link .soc-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon.link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  fill: var(--icon-color);
+}
+
+.icon.link:hover {
+  --color4: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 /* block our clients */
@@ -315,19 +341,26 @@ background-image: url('../images/clock1.svg');
   margin-right: 30px;
 }
 
-
-
-.client-icon {
-  fill:#AFB1B8;
+.client.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 170px;
   height: 90px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
 
+.client.link:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.client-icon {
+  fill: var(--icon-color);
+}
+
 .client-icon:hover {
   fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
 }
 
 /* footer style */
@@ -387,7 +420,6 @@ background-image: url('../images/clock1.svg');
 
 .nets.list {
   display: flex;
-
 }
 
 .nets.list .social-nets:not(:last-child) {
