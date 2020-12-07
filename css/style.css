@@ -303,6 +303,33 @@ background-image: url('../images/clock1.svg');
    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+/* block our clients */
+
+.clients .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients.list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+
+
+.client-icon {
+  fill:#AFB1B8;
+  min-width: 170px;
+  height: 90px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.client-icon:hover {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
 /* footer style */
 
 .footer {
