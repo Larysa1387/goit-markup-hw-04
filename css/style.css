@@ -98,6 +98,8 @@ a {
 }
 
 .nav .link {
+  display: flex;
+  align-items: baseline;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -115,6 +117,8 @@ a {
 }
 
 .nav-contacts .link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -125,8 +129,13 @@ a {
 .nav-contacts .link:hover,
 .nav-contacts .link:focus {
   color: var(--accent-color);
+  --color3: var(--accent-color)
 }
 
+.nav-contacts .icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
 
 /* main html style */
 
