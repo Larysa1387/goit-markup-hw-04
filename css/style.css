@@ -409,7 +409,7 @@ background-image: url('../images/clock1.svg');
 }
 
 .sign-in {
-  display: inline-block;
+  display: block;
   font-style: normal;
   text-transform: uppercase;
   font-size: 14px;
