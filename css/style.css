@@ -408,9 +408,6 @@ background-image: url('../images/clock1.svg');
   color: rgba(255, 255, 255, 0.6);
 }
 
-.sign {
-  align-items: start;
-}
 .sign-in {
   display: inline-block;
   font-style: normal;
@@ -429,6 +426,7 @@ background-image: url('../images/clock1.svg');
 .nets.list .social-nets:not(:last-child) {
   margin-right: 10px;
 }
+
 
 .social-nets::after {
   display: inline-flex;
